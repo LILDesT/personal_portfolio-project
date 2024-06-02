@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Blogs</title>
+</head>
+<body>
+    <h1>All Blogs</h1>
+    <p>This is the all blogs page.</p>
+    <h2> Shamil has written {{ projects1.count }} blog{{ projects1.count|pluralize }}</h2>
+    {% for project1 in projects1 %}
+
+       <a href ="{% url 'blog:detail' project1.id %}"><h2>{{ project1.title }}</h2></a>
+       <h5> {{ project1.Data|date:"M d Y"|upper }} </h5>
+        <p>{{ project1.description|striptags|truncatechars:100 }}</p>
+
+    {% endfor %}
+</body>
+</html>
