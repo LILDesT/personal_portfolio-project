@@ -1,3 +1,8 @@
+/* Custom styles */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
@@ -6,19 +11,48 @@
     color: rgba(0,0,0,.5) !important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+#hometext {
+    font-size: 3rem;
 }
 
 #blogtitle {
-    font-size: 6rem;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+#blogdetailtitle {
+    font-size: 3rem;
 }
 
 @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
     }
-    #blogdetailtitle {
-        font-size: 5rem;
+    #blogtitle {
+        font-size: 4rem;
     }
+    #blogdetailtitle {
+        font-size: 4rem;
+    }
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
 }
